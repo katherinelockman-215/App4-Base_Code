@@ -43,7 +43,7 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
 	
 	function cloggedAdd(){
 		clogged_pore = clogged_pore + 1;// add 1 everytime they click a "clogged" answer
-		alert(clogged_pore);//sends alert to computer
+			alert(clogged_pore);//sends alert to computer
 	}
 		
 	function inflammatoryAdd(){
@@ -111,7 +111,7 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
 	
     	<div id="content" class="w3-container">
         <p>Do you notice any white or black bumps on your face or the affected area?</p>    
-		<a href="#two" onclick="clogged_poreAdd();" class="w3-btn w3-blue w3-round"> yes </a> <!--button to count and advance to the next page-->
+		<a href="#two" onclick="cloggedAdd();" class="w3-btn w3-blue w3-round"> yes </a> <!--button to count and advance to the next page-->
 		<a href="#two" onclick="inflammatoryAdd();" onclick="cysticAdd();" class="w3-btn w3-blue w3-round"> no </a>
     	</div><!--/content-->
 	</div> <!-- make sure to end with 2 "</div> -->
@@ -128,8 +128,8 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
 	</div>
 	
     	<div id="content" class="w3-container">
-        <p>Are you undergoing a significant hormonal change</p>    
-		<a href="#three" onclick="clogged_poreAdd();" onclick="inflammatoryAdd();" class="w3-btn w3-blue w3-round"> yes </a> <!--button to count and advance to the next page-->
+        <p>Are you undergoing a significant hormonal change?</p>    
+		<a href="#three" onclick="cloggedAdd();" onclick="inflammatoryAdd();" class="w3-btn w3-blue w3-round"> yes </a> <!--button to count and advance to the next page-->
 		<a href="#three" onclick="cysticAdd();" class="w3-btn w3-blue w3-round"> no </a>
     	</div><!--/content-->
 	</div> <!-- make sure to end with 2 "</div> -->
@@ -146,9 +146,9 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
 	</div>
 	
     	<div id="content" class="w3-container">
-        <p>Do you notice any white or black bumps on your face or the affected area?</p>    
-		<a href="#four" onclick="clogged_poreAdd();" class="w3-btn w3-blue w3-round"> yes </a> <!--button to count and advance to the next page-->
-		<a href="#four" onclick="inflammatoryAdd();" onclick="cysticAdd();" class="w3-btn w3-blue w3-round"> no </a>
+        <p>Do you see any red bumbs along the area?</p>    
+		<a href="#four"  onclick="inflammatoryAdd();" class="w3-btn w3-blue w3-round"> yes </a> <!--button to count and advance to the next page-->
+		<a href="#four"  onclick="cloggedAdd();" onclick="cysticAdd();" class="w3-btn w3-blue w3-round"> no </a>
     	</div><!--/content-->
 	</div> <!-- make sure to end with 2 "</div> -->
 
@@ -164,9 +164,9 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
 	</div>
 	
     	<div id="content" class="w3-container">
-        <p>Do you notice any white or black bumps on your face or the affected area?</p>    
-		<a href="#five" onclick="clogged_poreAdd();" class="w3-btn w3-blue w3-round"> yes </a> <!--button to count and advance to the next page-->
-		<a href="#five" onclick="inflammatoryAdd();" onclick="cysticAdd();" class="w3-btn w3-blue w3-round"> no </a>
+        <p>Do you have lasting scars from previously affected areas?</p>    
+		<a href="#five"  onclick="cysticAdd();" class="w3-btn w3-blue w3-round"> yes </a> <!--button to count and advance to the next page-->
+		<a href="#five" onclick="inflammatoryAdd();" onclick="cloggedAdd();" class="w3-btn w3-blue w3-round"> no </a>
     	</div><!--/content-->
 	</div> <!-- make sure to end with 2 "</div> -->
 
@@ -182,9 +182,9 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
 	</div>
 	
     	<div id="content" class="w3-container">
-        <p>Do you notice any white or black bumps on your face or the affected area?</p>    
-		<a href="#six" onclick="clogged_poreAdd();" class="w3-btn w3-blue w3-round"> yes </a> <!--button to count and advance to the next page-->
-		<a href="#six" onclick="inflammatoryAdd();" onclick="cysticAdd();" class="w3-btn w3-blue w3-round"> no </a>
+        <p>Do you have cysts?</p>    
+		<a href="#six" onclick="inflammatoryAdd();" onclick="cysticAdd();" class="w3-btn w3-blue w3-round"> yes </a> <!--button to count and advance to the next page-->
+		<a href="#six" onclick="cloggedAdd();" class="w3-btn w3-blue w3-round"> no </a>
     	</div><!--/content-->
 	</div> <!-- make sure to end with 2 "</div> -->
 
@@ -200,10 +200,11 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
 	</div>
 	
     	<div id="content" class="w3-container">
-        <p>Do you notice any white or black bumps on your face or the affected area?</p>    
-		<a href="#seven" onclick="clogged_poreAdd();" class="w3-btn w3-blue w3-round"> yes </a> <!--button to count and advance to the next page-->
-		<a href="#seven" onclick="inflammatoryAdd();" onclick="cysticAdd();" class="w3-btn w3-blue w3-round"> no </a>
-    	</div><!--/content-->
+        <p>What kind of lasting marks do you have from previously affected areas?</p>    
+		<a href="#seven" onclick="cloggedAdd();" class="w3-btn w3-blue w3-round"> none </a> <!--button to count and advance to the next page-->
+		<a href="#seven" onclick="inflammatoryAdd();" class="w3-btn w3-blue w3-round"> red/dark marks (may have faded) </a>
+		<a href="#seven" onclick="cysticAdd();" class="w3-btn w3-blue w3-round"> scarring, dents, pits </a>
+	</div><!--/content-->
 	</div> <!-- make sure to end with 2 "</div> -->
 
 	<footer class="w3-bottom w3-container w3-flat-carrot"> <!-- this starts the footer-->
@@ -219,7 +220,7 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
 	
     	<div id="content" class="w3-container">
         <p>Do you notice any white or black bumps on your face or the affected area?</p>    
-		<a href="#two" onclick="clogged_poreAdd();" class="w3-btn w3-blue w3-round"> yes </a> <!--button to count and advance to the next page-->
+		<a href="#two" onclick="cloggedAdd();" class="w3-btn w3-blue w3-round"> yes </a> <!--button to count and advance to the next page-->
 		<a href="#two" onclick="inflammatoryAdd();" onclick="cysticAdd();" class="w3-btn w3-blue w3-round"> no </a>
     	</div><!--/content-->
 	</div> <!-- make sure to end with 2 "</div> -->
