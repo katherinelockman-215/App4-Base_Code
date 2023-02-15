@@ -53,7 +53,7 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
 		
 	function cysticAdd(){
 		cystic_count = cistic_count + 1;// adds 1 for every cystic answer
-		alert(cystic);//sends alert
+		alert(cystic_count);//sends alert
 	}
 	function ResultPercentage(){
 	var CloggedPercent = (clogged_pore/6)*100;//this is telling it to find the percentage of clogged answers
@@ -62,9 +62,15 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
 		var resultText = document.getElementById("results");
 		resultText.innerHTML = "Probability it is clogged pores = " + CloggedPercent + "%" + "<br> Probability it is inflammatory = " + InflammatoryPercent + "%"+ "<br> Probability it is cystic = " + CysticPercent + "%";//this displays the text it will show as well as telling the computer the algorithm for finding the percent
 	}
+	// The following code lets you know when the file was last modified.
+// This will help you know if you are looking at the new version of the file or if there is a delay on GitHub.
+       var docMod = document.lastModified;
+       alert("This file last modified  " + docMod);
+       console.log("This file last modified  " + docMod);
+// If you find the alert box annoying, comment out that line and timestamp will still show up in the debugging console
 	
 </script>	
-
+	
 
 <!-- THIS STYLE CODE HELPS MAKE YOUR APP LOOK GOOD. PROBABLY DONT MESS WITH IT -->
 <style>	
@@ -87,6 +93,10 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
     left: 0vw;
     z-index: 1;
 }
+img, object{
+	max-height:90%;
+        max-width:90%;
+}
 </style>
 
 <body>
@@ -100,6 +110,19 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
 	<p>Everyone gets clogged pores, but sometimes acne can lay deeper beneath the surface. Are you wondering which type of acne you many have? Answer a few short questions to find out!</p>
 <!--title above-->	
 	<a href="#one" class="w3-btn w3-blue w3-round"> Get Started </a> <!-- button to advance to question 1-->
+	
+		<!DOCTYPE html>
+		<html>
+		<body>
+
+		<h2>Types of Acne</h2>
+
+		<p>The three main catergories are cystic, inflammatory, and clogged pores.</p>
+
+		<img src="https://www.orientalremediesgroup.com/wp-content/uploads/2022/06/image_2022_06_22T09_46_28_461Z-1.png" alt="Flowers in Chania" width="460" height="345">
+
+		</body>
+		</html>
  	
 	<p>THIS CODE SHOULD NOT BE USED TO DIAGNOSE ANY KIND OF MEDICAL CONDITION.</p>
 <!--disclaimers:)) we are not doctors-->
