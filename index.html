@@ -55,12 +55,13 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
 		cystic = cistic + 1;// adds 1 for every cystic answer
 		alert(cystic);//sends alert
 	}
+	function ResultPercentage(){
 	var CloggedPercent = (clogged_pore/6)*100;//this is telling it to find the percentage of clogged answers
 	var InflammatoryPercent = (inflammatory/6)*100;// dividing by 6 because I had 6 questions then multiplying by 100 to get the percent of inflammatory answers
 	var CysticPercent = (cystic/6)*100;//this is telling it to find the percentage of cystic answers
 		var resultText = document.getElementById("results");
 		resultText.innerHTML = "Probability it is clogged pores = " + CloggedPercent + "%" + "<br> Probability it is inflammatory = " + InflammatoryPercent + "%"+ "<br> Probability it is cystic = " + CysticPercent + "%";//this displays the text it will show as well as telling the computer the algorithm for finding the percent
-		}
+	//}
 	
 </script>	
 
