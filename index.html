@@ -61,7 +61,7 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
 	var CysticPercent = (cystic/6)*100;//this is telling it to find the percentage of cystic answers
 		var resultText = document.getElementById("results");
 		resultText.innerHTML = "Probability it is clogged pores = " + CloggedPercent + "%" + "<br> Probability it is inflammatory = " + InflammatoryPercent + "%"+ "<br> Probability it is cystic = " + CysticPercent + "%";//this displays the text it will show as well as telling the computer the algorithm for finding the percent
-	//}
+	}
 	
 </script>	
 
@@ -215,17 +215,20 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
 	
 	
 	<div class="page" id="seven">
-	<div id="header" class="w3-container w3-flat-carrot"> <!-- used on all pages to dictate setup-->
+	
+		<div class="w3-container w3-flat-carrot"> <!-- used on all pages to dictate setup-->
 		<h1>Results</h1> <!--page title-->
 	</div>
 	
     	<div id="content" class="w3-container">
-        <p>Do you notice any white or black bumps on your face or the affected area?</p>    
-		<a href="#two" onclick="cloggedAdd();" class="w3-btn w3-blue w3-round"> yes </a> <!--button to count and advance to the next page-->
-		<a href="#two" onclick="inflammatoryAdd();" onclick="cysticAdd();" class="w3-btn w3-blue w3-round"> no </a>
-    	</div><!--/content-->
-	</div> <!-- make sure to end with 2 "</div> -->
-
+     
+		<p>Click the button below to see your results</p>    
+		
+		<a onclick="resultPercentage();" class=w3-btn wr-blue w3-round" see results </a>
+									       <p id="results"></p>
+		</div>
+	</div> 
+											      
 	<footer class="w3-bottom w3-container w3-flat-carrot"> <!-- this starts the footer-->
 	<p>DIY!</p>
 </footer> <!-- include the footer on all pages -->
