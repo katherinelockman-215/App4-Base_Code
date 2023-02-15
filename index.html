@@ -39,7 +39,7 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
 
 	var clogged_pore = 0 //this is the starting point for the clogged pore count
 	var inflammatory = 0 //starting point for inflammatory
-	var cystic = 0 //starting point for cystic
+	var cystic_count = 0 //starting point for cystic
 	
 	function cloggedAdd(){
 		clogged_pore = clogged_pore + 1;// add 1 everytime they click a "clogged" answer
@@ -52,13 +52,13 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
 	}
 		
 	function cysticAdd(){
-		cystic = cistic + 1;// adds 1 for every cystic answer
+		cystic_count = cistic_count + 1;// adds 1 for every cystic answer
 		alert(cystic);//sends alert
 	}
 	function ResultPercentage(){
 	var CloggedPercent = (clogged_pore/6)*100;//this is telling it to find the percentage of clogged answers
 	var InflammatoryPercent = (inflammatory/6)*100;// dividing by 6 because I had 6 questions then multiplying by 100 to get the percent of inflammatory answers
-	var CysticPercent = (cystic/6)*100;//this is telling it to find the percentage of cystic answers
+	var CysticPercent = (cystic_count/6)*100;//this is telling it to find the percentage of cystic answers
 		var resultText = document.getElementById("results");
 		resultText.innerHTML = "Probability it is clogged pores = " + CloggedPercent + "%" + "<br> Probability it is inflammatory = " + InflammatoryPercent + "%"+ "<br> Probability it is cystic = " + CysticPercent + "%";//this displays the text it will show as well as telling the computer the algorithm for finding the percent
 	}
@@ -222,7 +222,7 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
     	<div id="content" class="w3-container">
      
 		<p>Results:</p>    
-		<a onclick="resultPercentage();" class=w3-btn wr-blue w3-round"> see results </a>
+		<a onclick="resultPercentage();" class="w3-btn wr-blue w3-round"> see results </a>
 		<p id="results"></p>
 		</div>
 	</div> 
