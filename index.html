@@ -7,7 +7,7 @@ THIS CODE SHOULD NOT BE USED TO DIAGNOSE ANY KIND OF MEDICAL CONDITION.
  
 Authors in chronological order of contribution:
 Tim Riedel
-Author 2
+Katherine Lockman
  
 Further Information:
 http://diystream.cns.utexas.edu/
@@ -17,10 +17,9 @@ Timothy Riedel
 triedel@utexas.edu
  
 Brief Description of Goal of Code:
-blah, blah, blah,
- 
+This code is to determine whether a person's symptoms are those of or  
 Known Issues:
-blah, blah, blah, blah
+I am not a professional coder, so there may be bugs.
 Ignore this error message if you see it using the javaScript console: Error with Permissions-Policy header: Origin trial controlled feature not enabled: 'interest-cohort'.
 
 References:
@@ -29,7 +28,7 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
 -->
 	
 <head> 
-	<title>Hello World</title>  
+	<title>What kind of acne do you have?</title>  
 ]	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta name="apple-mobile-web-app-capable" content="yes">
 	<link rel="stylesheet" href="w3.css">
@@ -38,8 +37,31 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
 
 <script>
 
-	//YOUR JAVASCRIPT GOES HERE
-
+	var clogged_pore = 0 //this is the starting point for the clogged pore count
+	var inflammatory = 0 //starting point for inflammatory
+	var cystic = 0 //starting point for cystic
+	
+	function cloggedAdd(){
+		clogged_pore = clogged_pore + 1;// add 1 everytime they click a "clogged" answer
+		alert(clogged_pore);//sends alert to computer
+	}
+		
+	function inflammatoryAdd(){
+		inflammatory = inflammatory + 1;//add 1 every inflammatory answer
+		alert(inflammatory);//sends alert
+	}
+		
+	function cysticAdd(){
+		cystic = cistic + 1;// adds 1 for every cystic answer
+		alert(cystic);sends alert
+	}
+	var CloggedPercent = (clogged_pore/6)*100;//this is telling it to find the percentage of clogged answers
+	var InflammatoryPercent = (inflammatory/6)*100;// dividing by 6 because I had 6 questions then multiplying by 100 to get the percent of inflammatory answers
+	var CysticPercent = (cystic/6)*100;//this is telling it to find the percentage of cystic answers
+		var resultText = document.getElementById("results");
+		resultText.innerHTML = "Probability it is clogged pores = " + CloggedPercent + "%" + "<br> Probability it is inflammatory = " + InflammatoryPercent + "%"+ "<br> Probability it is cystic = " + CysticPercent + "%";//this displays the text it will show as well as telling the computer the algorithm for finding the percent
+		}
+	
 </script>	
 
 
@@ -69,7 +91,32 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
 <body>
 	
 	<!-- HERE IS WHERE ALL OF YOUR HTML PAGES GO -->
-	REPLACE THIS TEXT
+<div id="header" class="w3-container w3-flat-carrot"> <!--/title page and h1 is the title-->
+	<h1>What kind of acne do you have?</h1>
+</div>
 	
+<div id="content" class="w3-container">
+	<p>Everyone gets clogged pores, but sometimes acne can lay deeper beneath the surface. Are you wondering which type of acne you many have? Answer a few short questions to find out!</p>
+<!--title above-->	
+	<a href="#one" class="w3-btn w3-blue w3-round"> Get Started </a> <!-- button to advance to question 1-->
+ 	
+	<p>THIS CODE SHOULD NOT BE USED TO DIAGNOSE ANY KIND OF MEDICAL CONDITION.</p>
+<!--disclaimers:)) we are not doctors-->
+	
+<div class="page" id="one">
+	<div id="header" class="w3-container w3-flat-carrot"> <!-- used on all pages to dictate setup-->
+		<h1>Question 1</h1> <!--page title-->
+	</div>
+	
+    	<div id="content" class="w3-container">
+        <p>Do you notice any white or black bumps on your face or the affected area?</p>    
+		<a href="#two" onclick="clogged_poreAdd();" class="w3-btn w3-blue w3-round"> yes </a> <!--button to count and advance to the next page-->
+		<a href="#two" onclick="inflammatoryAdd();" onclick="cysticAdd();" class="w3-btn w3-blue w3-round"> no </a>
+    	</div><!--/content-->
+	</div> <!-- make sure to end with 2 "</div> -->
+
+	<footer class="w3-bottom w3-container w3-flat-carrot"> <!-- this starts the footer-->
+	<p>DIY!</p>
+</footer> <!-- include the footer on all pages -->
 </body>
 </html>
