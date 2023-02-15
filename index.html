@@ -29,7 +29,7 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
 	
 <head> 
 	<title>What kind of acne do you have?</title>  
-]	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta name="apple-mobile-web-app-capable" content="yes">
 	<link rel="stylesheet" href="w3.css">
 	<link rel="stylesheet" href="w3-colors-flat.css">
@@ -53,7 +53,7 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
 		
 	function cysticAdd(){
 		cystic = cistic + 1;// adds 1 for every cystic answer
-		alert(cystic);sends alert
+		alert(cystic);//sends alert
 	}
 	var CloggedPercent = (clogged_pore/6)*100;//this is telling it to find the percentage of clogged answers
 	var InflammatoryPercent = (inflammatory/6)*100;// dividing by 6 because I had 6 questions then multiplying by 100 to get the percent of inflammatory answers
@@ -106,6 +106,114 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
 <div class="page" id="one">
 	<div id="header" class="w3-container w3-flat-carrot"> <!-- used on all pages to dictate setup-->
 		<h1>Question 1</h1> <!--page title-->
+	</div>
+	
+    	<div id="content" class="w3-container">
+        <p>Do you notice any white or black bumps on your face or the affected area?</p>    
+		<a href="#two" onclick="clogged_poreAdd();" class="w3-btn w3-blue w3-round"> yes </a> <!--button to count and advance to the next page-->
+		<a href="#two" onclick="inflammatoryAdd();" onclick="cysticAdd();" class="w3-btn w3-blue w3-round"> no </a>
+    	</div><!--/content-->
+	</div> <!-- make sure to end with 2 "</div> -->
+
+	<footer class="w3-bottom w3-container w3-flat-carrot"> <!-- this starts the footer-->
+	<p>DIY!</p>
+</footer> <!-- include the footer on all pages -->
+	
+	
+	
+	<div class="page" id="two">
+	<div id="header" class="w3-container w3-flat-carrot"> <!-- used on all pages to dictate setup-->
+		<h1>Question 2</h1> <!--page title-->
+	</div>
+	
+    	<div id="content" class="w3-container">
+        <p>Are you undergoing a significant hormonal change</p>    
+		<a href="#three" onclick="clogged_poreAdd();" onclick="inflammatoryAdd();" class="w3-btn w3-blue w3-round"> yes </a> <!--button to count and advance to the next page-->
+		<a href="#three" onclick="cysticAdd();" class="w3-btn w3-blue w3-round"> no </a>
+    	</div><!--/content-->
+	</div> <!-- make sure to end with 2 "</div> -->
+
+	<footer class="w3-bottom w3-container w3-flat-carrot"> <!-- this starts the footer-->
+	<p>DIY!</p>
+</footer> <!-- include the footer on all pages -->
+	
+	
+	
+	<div class="page" id="three">
+	<div id="header" class="w3-container w3-flat-carrot"> <!-- used on all pages to dictate setup-->
+		<h1>Question 3</h1> <!--page title-->
+	</div>
+	
+    	<div id="content" class="w3-container">
+        <p>Do you notice any white or black bumps on your face or the affected area?</p>    
+		<a href="#four" onclick="clogged_poreAdd();" class="w3-btn w3-blue w3-round"> yes </a> <!--button to count and advance to the next page-->
+		<a href="#four" onclick="inflammatoryAdd();" onclick="cysticAdd();" class="w3-btn w3-blue w3-round"> no </a>
+    	</div><!--/content-->
+	</div> <!-- make sure to end with 2 "</div> -->
+
+	<footer class="w3-bottom w3-container w3-flat-carrot"> <!-- this starts the footer-->
+	<p>DIY!</p>
+</footer> <!-- include the footer on all pages -->
+	
+	
+	
+	<div class="page" id="four">
+	<div id="header" class="w3-container w3-flat-carrot"> <!-- used on all pages to dictate setup-->
+		<h1>Question 4</h1> <!--page title-->
+	</div>
+	
+    	<div id="content" class="w3-container">
+        <p>Do you notice any white or black bumps on your face or the affected area?</p>    
+		<a href="#five" onclick="clogged_poreAdd();" class="w3-btn w3-blue w3-round"> yes </a> <!--button to count and advance to the next page-->
+		<a href="#five" onclick="inflammatoryAdd();" onclick="cysticAdd();" class="w3-btn w3-blue w3-round"> no </a>
+    	</div><!--/content-->
+	</div> <!-- make sure to end with 2 "</div> -->
+
+	<footer class="w3-bottom w3-container w3-flat-carrot"> <!-- this starts the footer-->
+	<p>DIY!</p>
+</footer> <!-- include the footer on all pages -->
+	
+	
+	
+	<div class="page" id="five">
+	<div id="header" class="w3-container w3-flat-carrot"> <!-- used on all pages to dictate setup-->
+		<h1>Question 5</h1> <!--page title-->
+	</div>
+	
+    	<div id="content" class="w3-container">
+        <p>Do you notice any white or black bumps on your face or the affected area?</p>    
+		<a href="#six" onclick="clogged_poreAdd();" class="w3-btn w3-blue w3-round"> yes </a> <!--button to count and advance to the next page-->
+		<a href="#six" onclick="inflammatoryAdd();" onclick="cysticAdd();" class="w3-btn w3-blue w3-round"> no </a>
+    	</div><!--/content-->
+	</div> <!-- make sure to end with 2 "</div> -->
+
+	<footer class="w3-bottom w3-container w3-flat-carrot"> <!-- this starts the footer-->
+	<p>DIY!</p>
+</footer> <!-- include the footer on all pages -->
+	
+	
+	
+	<div class="page" id="six">
+	<div id="header" class="w3-container w3-flat-carrot"> <!-- used on all pages to dictate setup-->
+		<h1>Question 6</h1> <!--page title-->
+	</div>
+	
+    	<div id="content" class="w3-container">
+        <p>Do you notice any white or black bumps on your face or the affected area?</p>    
+		<a href="#seven" onclick="clogged_poreAdd();" class="w3-btn w3-blue w3-round"> yes </a> <!--button to count and advance to the next page-->
+		<a href="#seven" onclick="inflammatoryAdd();" onclick="cysticAdd();" class="w3-btn w3-blue w3-round"> no </a>
+    	</div><!--/content-->
+	</div> <!-- make sure to end with 2 "</div> -->
+
+	<footer class="w3-bottom w3-container w3-flat-carrot"> <!-- this starts the footer-->
+	<p>DIY!</p>
+</footer> <!-- include the footer on all pages -->
+	
+	
+	
+	<div class="page" id="seven">
+	<div id="header" class="w3-container w3-flat-carrot"> <!-- used on all pages to dictate setup-->
+		<h1>Results</h1> <!--page title-->
 	</div>
 	
     	<div id="content" class="w3-container">
