@@ -46,21 +46,15 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
 			alert(clogged_pore);//sends alert to computer
 	}
 		
-	function inflammatoryAdd(){
-		inflammatory = inflammatory + 1;//add 1 every inflammatory answer
-		alert(inflammatory);//sends alert
-	}
-		
 	function cysticAdd(){
 		cystic_count = cistic_count + 1;// adds 1 for every cystic answer
 		alert(cystic_count);//sends alert
 	}
 	function ResultPercentage(){
 	var CloggedPercent = (clogged_pore/6)*100;//this is telling it to find the percentage of clogged answers
-	var InflammatoryPercent = (inflammatory/6)*100;// dividing by 6 because I had 6 questions then multiplying by 100 to get the percent of inflammatory answers
 	var CysticPercent = (cystic_count/6)*100;//this is telling it to find the percentage of cystic answers
 		var resultText = document.getElementById("results");
-		resultText.innerHTML = "Probability it is clogged pores = " + CloggedPercent + "%" + "<br> Probability it is inflammatory = " + InflammatoryPercent + "%"+ "<br> Probability it is cystic = " + CysticPercent + "%";//this displays the text it will show as well as telling the computer the algorithm for finding the percent
+		resultText.innerHTML = "Probability it is clogged pores = " + CloggedPercent + "%" + "<br> Probability it is cystic = " + CysticPercent + "%";//this displays the text it will show as well as telling the computer the algorithm for finding the percent
 	}
 	// The following code lets you know when the file was last modified.
 // This will help you know if you are looking at the new version of the file or if there is a delay on GitHub.
@@ -117,7 +111,7 @@ img, object{
 
 		<h2>Types of Acne</h2>
 
-		<p>The three main catergories are cystic, inflammatory, and clogged pores.</p>
+		<p>The two main catergories are cystic and clogged pores.</p>
 
 		<img src="https://www.orientalremediesgroup.com/wp-content/uploads/2022/06/image_2022_06_22T09_46_28_461Z-1.png" alt="Flowers in Chania" width="460" height="345">
 
@@ -136,7 +130,7 @@ img, object{
     	<div id="content" class="w3-container">
         <p>Do you notice any white or black bumps on your face or the affected area?</p>    
 		<a href="#two" onclick="cloggedAdd();" class="w3-btn w3-blue w3-round"> yes </a> <!--button to count and advance to the next page-->
-		<a href="#two" onclick="inflammatoryAdd();" onclick="cysticAdd();" class="w3-btn w3-blue w3-round"> no </a>
+		<a href="#two" onclick="cysticAdd();" class="w3-btn w3-blue w3-round"> no </a>
     	</div><!--/content-->
 	</div> <!-- make sure to end with 2 "</div> -->
 
@@ -153,7 +147,7 @@ img, object{
 	
     	<div id="content" class="w3-container">
         <p>Are you undergoing a significant hormonal change?</p>    
-		<a href="#three" onclick="cloggedAdd();" onclick="inflammatoryAdd();" class="w3-btn w3-blue w3-round"> yes </a> <!--button to count and advance to the next page-->
+		<a href="#three" onclick="cloggedAdd();" class="w3-btn w3-blue w3-round"> yes </a> <!--button to count and advance to the next page-->
 		<a href="#three" onclick="cysticAdd();" class="w3-btn w3-blue w3-round"> no </a>
     	</div><!--/content-->
 	</div> <!-- make sure to end with 2 "</div> -->
@@ -170,9 +164,9 @@ img, object{
 	</div>
 	
     	<div id="content" class="w3-container">
-        <p>Do you see any red bumbs along the area?</p>    
-		<a href="#four"  onclick="inflammatoryAdd();" class="w3-btn w3-blue w3-round"> yes </a> <!--button to count and advance to the next page-->
-		<a href="#four"  onclick="cloggedAdd();" onclick="cysticAdd();" class="w3-btn w3-blue w3-round"> no </a>
+        <p>Is the majority of your face affected?</p>    
+		<a href="#four"  onclick="cysticAdd();" class="w3-btn w3-blue w3-round"> yes </a> <!--button to count and advance to the next page-->
+		<a href="#four"  onclick="cloggedAdd();" class="w3-btn w3-blue w3-round"> no </a>
     	</div><!--/content-->
 	</div> <!-- make sure to end with 2 "</div> -->
 
@@ -190,7 +184,7 @@ img, object{
     	<div id="content" class="w3-container">
         <p>Do you have lasting scars from previously affected areas?</p>    
 		<a href="#five"  onclick="cysticAdd();" class="w3-btn w3-blue w3-round"> yes </a> <!--button to count and advance to the next page-->
-		<a href="#five" onclick="inflammatoryAdd();" onclick="cloggedAdd();" class="w3-btn w3-blue w3-round"> no </a>
+		<a href="#five" onclick="cloggedAdd();" class="w3-btn w3-blue w3-round"> no </a>
     	</div><!--/content-->
 	</div> <!-- make sure to end with 2 "</div> -->
 
@@ -207,7 +201,7 @@ img, object{
 	
     	<div id="content" class="w3-container">
         <p>Do you have cysts?</p>    
-		<a href="#six" onclick="inflammatoryAdd();" onclick="cysticAdd();" class="w3-btn w3-blue w3-round"> yes </a> <!--button to count and advance to the next page-->
+		<a href="#six" onclick="cysticAdd();" class="w3-btn w3-blue w3-round"> yes </a> <!--button to count and advance to the next page-->
 		<a href="#six" onclick="cloggedAdd();" class="w3-btn w3-blue w3-round"> no </a>
     	</div><!--/content-->
 	</div> <!-- make sure to end with 2 "</div> -->
@@ -226,7 +220,6 @@ img, object{
     	<div id="content" class="w3-container">
         <p>What kind of lasting marks do you have from previously affected areas?</p>    
 		<a href="#seven" onclick="cloggedAdd();" class="w3-btn w3-blue w3-round"> none </a> <!--button to count and advance to the next page-->
-		<a href="#seven" onclick="inflammatoryAdd();" class="w3-btn w3-blue w3-round"> red/dark marks (may have faded) </a>
 		<a href="#seven" onclick="cysticAdd();" class="w3-btn w3-blue w3-round"> scarring, dents, pits </a>
 	</div><!--/content-->
 	</div> <!-- make sure to end with 2 "</div> -->
